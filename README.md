@@ -3,7 +3,7 @@
 Fritzing :
 ![Screenshot 2022-07-30 231133](https://user-images.githubusercontent.com/91713155/181925760-b11ed8ec-a885-40e1-94a6-087ce0fe7921.jpg)
 
-sensor.py :
+## sensor.py :
 
 import RPi.GPIO as GPIO
 import time
@@ -14,7 +14,7 @@ GPIO.setup(channel, GPIO.IN)
 GPIO.setup(12,GPIO.OUT,initial=GPIO.LOW)  
 GPIO.setup(16,GPIO.OUT,initial=GPIO.LOW)
  
-main.py :
+## main.py :
 import RPi.GPIO as GPIO
 import time
 
@@ -36,6 +36,6 @@ def callback(channel):
 GPIO.add_event_detect(channel, GPIO.BOTH, bouncetime=300)  # Pemberitahuan saat pin menjadi TINGGI atau RENDAH
 GPIO.add_event_callback(channel, callback)  # Tetapkan fungsi ke PIN GPIO, Jalankan fungsi saat berubah
  
-# infinite loop
+#infinite loop
 while True:
         time.sleep(1)

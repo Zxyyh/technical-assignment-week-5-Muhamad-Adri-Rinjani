@@ -1,6 +1,6 @@
 # technical-assignment-week-5-Muhamad-Adri-Rinjani
 
-Fritzing :
+## Fritzing :
 ![Screenshot 2022-07-30 231133](https://user-images.githubusercontent.com/91713155/181925760-b11ed8ec-a885-40e1-94a6-087ce0fe7921.jpg)
 
 ## sensor.py :
